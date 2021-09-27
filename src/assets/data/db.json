@@ -1,0 +1,19 @@
+{
+  "cidade": [
+    {
+        "id": 1,
+        "model": "Pinhais",
+        "color": "PR"
+      },
+      {
+      "id": 2,
+      "model": "Curitiba",
+      "color": "PR"
+    },
+    {
+      "id": 3,
+      "model": "Campo Largo",
+      "color": "PR"
+    }
+  ]
+}

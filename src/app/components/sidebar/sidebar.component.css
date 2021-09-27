@@ -1,0 +1,21 @@
+.sidebar .logo {
+    padding: 15px 0px;
+    margin: 0;
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+
+.sidebar .logo .simple-text {
+    text-transform: uppercase;
+    padding: 5px 30px !important;
+    display: inline-block;
+    font-size: 18px;
+    color: #3C4858;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: left !important;
+    display: block;
+}
