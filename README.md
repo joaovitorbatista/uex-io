@@ -2,11 +2,11 @@
 
 Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cli) versão 12.2.7.
 
-## NPM Install
+## Install JSON Server
 
-Execute 'npm install'
+Execute 'npm install -g json-server'
 
-## JSON SERVER
+## Start JSON Server
 
 Rodar no console 'json-server --watch src/assets/data/db.json'
 Esse comando irá criar o servidor para requisições
