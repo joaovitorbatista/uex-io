@@ -36,23 +36,7 @@ export class CidadeService {
       )
   }
 
-  // salva uma cidade
-  saveCidade(cidade: Cidade): Observable<Cidade> {
-    return this.httpClient.post<Cidade>(this.url, JSON.stringify(cidade), this.httpOptions)
-      .pipe(
-        retry(2),
-        catchError(this.handleError)
-      )
-  }
 
-  // utualiza uma cidade
-  updateCidade(cidade: Cidade): Observable<Cidade> {
-    return this.httpClient.put<Cidade>(this.url + '/' + cidade.id, JSON.stringify(cidade), this.httpOptions)
-      .pipe(
-        retry(1),
-        catchError(this.handleError)
-      )
-  }
 
 
   // Manipulação de erros
