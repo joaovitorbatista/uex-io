@@ -39,6 +39,7 @@ Para obter mais ajuda sobre o Angular CLI, use 'ng help' ou confira a página [V
 
 No download, você encontrará os seguintes diretórios e arquivos:
 
+.
 UEX-IO
 ├── README.md
 ├── angular-cli.json
@@ -113,5 +114,5 @@ UEX-IO
 ├── tsconfig.json
 ├── tslint.json
 └── typings
-
+.
 
