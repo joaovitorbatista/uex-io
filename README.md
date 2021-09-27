@@ -13,7 +13,7 @@ Esse comando irá criar o servidor para requisições
 
 ## Servidor de desenvolvimento
 
-Execute 'ng serve' para um servidor de desenvolvimento. Navegue até 'http://localhost:4200/'. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Execute 'npm run start' ou 'ng serve' para um servidor de desenvolvimento. Navegue até 'http://localhost:4200/'. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Code scaffolding
 
