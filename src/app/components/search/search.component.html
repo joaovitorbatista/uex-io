@@ -1,14 +1,18 @@
-<mat-form-field>
-  <input
-    type="text"
-    placeholder="Pesquise sua cidade"
-    matInput
-    [formControl]="myControl"
-    [matAutocomplete]="auto"
-  />
-  <mat-autocomplete #auto="matAutocomplete">
-    <mat-option *ngFor="let cidade of cidades" [value]="cidade">
-      {{ cidade.nome }}
-    </mat-option>
-  </mat-autocomplete>
-</mat-form-field>
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Cidade</mat-label>
+    <input
+      type="text"
+      placeholder="Cidade"
+      aria-label="Cidade"
+      matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let cidade of cidades" [value]="cidade.nome">
+        {{cidade.nome}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

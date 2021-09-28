@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { CidadeService } from './../../services/cidade.service';
 import { Cidade } from './../../models/cidade';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -25,7 +24,7 @@ export class SearchComponent {
     this.getCidades();
   }
 
-  // Chama o serviço para obtém todos as Cidade
+  // Chama o serviço para obter todas as Cidade
   getCidades() {
     this.cidadeService.getCidade().subscribe((cidades: Cidade[]) => {
       this.cidades = cidades;
