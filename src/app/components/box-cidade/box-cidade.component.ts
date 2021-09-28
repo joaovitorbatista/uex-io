@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { CidadeService } from './../../services/cidade.service';
 import { Cidade } from './../../models/cidade';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-box-cidade',
   templateUrl: './box-cidade.component.html',
   styleUrls: ['./box-cidade.component.scss']
 })
-export class BoxCidadeComponent implements OnInit {
+export class BoxCidadeComponent{
+
+  myControl = new FormControl();
+  // options: string[] = ['Curitiba', 'Campo Largo', 'Pinhais'];
 
   cidade = {} as Cidade;
   cidades: Cidade[];
@@ -19,12 +22,14 @@ export class BoxCidadeComponent implements OnInit {
     this.getCidades();
   }
 
-  // Chama o serviço para obtém todos as Cidade
+  // Chama o serviço para obter todas as Cidade
   getCidades() {
     this.cidadeService.getCidade().subscribe((cidades: Cidade[]) => {
       this.cidades = cidades;
     });
   }
+
+
 
 
 }
