@@ -1,12 +1,12 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Selecione sua cidade</th>
+            <th scope="col">Previsão do tempo</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let cidade of cidades">
-            <td>{{cidade.nome}}</td>
+            <td>{{cidade.id}} - {{cidade.cid}} - {{cidade.resumo}} - {{cidade.temp_max}}º - {{cidade.temp_min}}º - {{cidade.data}}</td>
         </tr>
     </tbody>
 </table>

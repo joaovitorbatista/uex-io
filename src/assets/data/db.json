@@ -1,19 +1,13 @@
 {
   "cidade": [
     {
-        "id": 1,
-        "city": "Pinhais",
-        "state": "PR"
-      },
-      {
-      "id": 2,
-      "city": "Curitiba",
-      "state": "PR"
-    },
-    {
-      "id": 3,
-      "city": "Campo Largo",
-      "state": "PR"
-    }
+      "id" : 3514809 ,
+      "cid" : "Eldorado" ,
+      "periodo" : "manha" ,
+      "data" : "28/09/2021" ,
+      "resumo" : "Poucas nuvens" ,
+      "temp_max" : "33" ,
+      "temp_min" : "17"
+      }
   ]
 }

@@ -1,5 +1,9 @@
 export interface Cidade {
     id: number;
-    city: string;
-    state: string;
+    cid: string;
+    periodo: string;
+    data: number;
+    resumo: string;
+    temp_max: string;
+    temp_min: string;
 }

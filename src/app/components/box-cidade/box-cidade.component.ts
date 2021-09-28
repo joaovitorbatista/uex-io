@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { CidadeService } from './../../services/cidade.service';
+import { ClimaService } from './../../services/clima.service';
 import { Cidade } from './../../models/cidade';
 
 @Component({
@@ -16,7 +16,7 @@ export class BoxCidadeComponent{
   cidade = {} as Cidade;
   cidades: Cidade[];
 
-  constructor(private cidadeService: CidadeService) {}
+  constructor(private ClimaService: ClimaService) {}
   
   ngOnInit() {
     this.getCidades();
@@ -24,7 +24,7 @@ export class BoxCidadeComponent{
 
   // Chama o serviço para obter todas as Cidade
   getCidades() {
-    this.cidadeService.getCidade().subscribe((cidades: Cidade[]) => {
+    this.ClimaService.getClima().subscribe((cidades: Cidade[]) => {
       this.cidades = cidades;
     });
   }
