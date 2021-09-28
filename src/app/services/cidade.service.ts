@@ -9,7 +9,8 @@ import { Cidade } from '../models/cidade';
 })
 export class CidadeService {
 
-  url = 'http://localhost:3000/cidade'; // api rest fake
+  // url = 'http://localhost:3000/cidade'; // api rest fake
+  url = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/41/municipios';
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -28,16 +29,13 @@ export class CidadeService {
   }
 
   // Obtem uma cidade pelo id
-  getCidadeById(id: number): Observable<Cidade> {
-    return this.httpClient.get<Cidade>(this.url + '/' + id)
-      .pipe(
-        retry(2),
-        catchError(this.handleError)
-      )
-  }
-
-
-
+  //getCidadeById(id: number): Observable<Cidade> {
+  //  return this.httpClient.get<Cidade>(this.url + '/' + id)
+  //    .pipe(
+  //      retry(2),
+  //      catchError(this.handleError)
+  //    )
+  //}
 
   // Manipulação de erros
   handleError(error: HttpErrorResponse) {

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { CidadeService } from './../../services/cidade.service';
+import { Cidade } from './../../models/cidade';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -7,7 +10,27 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./search.component.css']
 })
 
+
 export class SearchComponent {
-  myControl = new FormControl();
-  options: string[] = ['Curitiba', 'Campo Largo', 'Pinhais'];
+
+   myControl = new FormControl();
+  // options: string[] = ['Curitiba', 'Campo Largo', 'Pinhais'];
+
+  cidade = {} as Cidade;
+  cidades: Cidade[];
+
+  constructor(private cidadeService: CidadeService) {}
+  
+  ngOnInit() {
+    this.getCidades();
+  }
+
+  // Chama o serviço para obtém todos as Cidade
+  getCidades() {
+    this.cidadeService.getCidade().subscribe((cidades: Cidade[]) => {
+      this.cidades = cidades;
+    });
+  }
+
+
 }

@@ -1,16 +1,12 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Cidade</th>
-            <th scope="col">Estado</th>
+            <th scope="col">Selecione sua cidade</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let cidade of cidades">
-            <td>{{cidade.id}}</td>
-            <td>{{cidade.city}}</td>
-            <td>{{cidade.state}}</td>
+            <td>{{cidade.nome}}</td>
         </tr>
     </tbody>
 </table>
