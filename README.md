@@ -2,18 +2,19 @@
 
 Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cli) versão 12.2.7.
 
-## Install JSON Server
+## NPM Install
 
-Execute 'npm install -g json-server'
+Execute 'npm install'
 
 ## Start JSON Server
 
-Rodar no console 'json-server --watch src/assets/data/db.json'
+Execute 'npm run json:server'
+
 Esse comando irá criar o servidor para requisições
 
 ## Servidor de desenvolvimento
 
-Execute 'npm run start' ou 'ng serve' para um servidor de desenvolvimento. Navegue até 'http://localhost:4200/'. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Execute 'ng serve -o' ou 'npm run start' para um servidor de desenvolvimento. Navegue até 'http://localhost:4200/'. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Code scaffolding
 
