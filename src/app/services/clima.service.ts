@@ -9,8 +9,8 @@ import { Cidade } from '../models/cidade';
 })
 export class ClimaService {
 
-  url = 'http://localhost:3000/cidade'; // api rest fake
-  // url = 'https://apiprevmet3.inmet.gov.br/previsao/3514809';
+  // url = 'http://localhost:3000/cidade'; // api rest fake
+  url = 'https://apiprevmet3.inmet.gov.br/previsao/5300108';
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -21,9 +21,9 @@ export class ClimaService {
   }
 
   // Obtem todos os climas
-  getClima(): Observable<Cidade[]> {
-    return this.httpClient.get<Cidade[]>(this.url)
-      .pipe(
+  getClima() {
+     var eita = this.httpClient.get(this.url)
+     return eita  .pipe(
         retry(2),
         catchError(this.handleError))
   }
