@@ -2,14 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { Cidade } from '../models/cidade';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClimaService {
 
-  // url = 'http://localhost:3000/cidade'; // api rest fake
   url = 'https://apiprevmet3.inmet.gov.br/previsao/5300108';
 
   // injetando o HttpClient
