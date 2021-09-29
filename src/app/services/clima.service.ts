@@ -8,7 +8,7 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class ClimaService {
 
-  url = 'https://apiprevmet3.inmet.gov.br/previsao/5300108';
+  url = 'https://apiprevmet3.inmet.gov.br/previsao/4106902';
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }

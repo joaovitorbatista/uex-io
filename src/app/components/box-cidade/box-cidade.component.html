@@ -5,10 +5,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let v of periodos">
-            <!-- <td>{{cidade.id}} - {{cidade.cid}} - {{cidade.resumo}} - {{cidade.temp_max}}º - {{cidade.temp_min}}º - {{cidade.data}}</td> -->
+        <!-- <tr *ngFor="let v of periodos">
             <td>{{cidades[v]['uf']}}</td>
             <td>{{v}}</td>
-        </tr>
+        </tr> -->
+        <div *ngFor="let periodo of cidades">
+            <h2>{{periodo.entidade}} - {{periodo.uf}} - {{periodo.periodo}} </h2>
+            <p>Max: {{periodo.temp_max}}º / Min: {{periodo.temp_min}}º</p>
+            <p>Resumo: {{periodo.resumo}}</p>
+            <hr>
+        </div>
     </tbody>
 </table>
