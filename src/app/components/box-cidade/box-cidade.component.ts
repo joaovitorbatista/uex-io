@@ -12,7 +12,7 @@ export class BoxCidadeComponent {
   myControl = new FormControl();
 
   cidades: Object;
-  periodos: Object;
+  periodos: string[];
 
   constructor(private ClimaService: ClimaService) {}
 
@@ -37,7 +37,7 @@ export class BoxCidadeComponent {
   getCidades() {
     this.ClimaService.getClima().subscribe((cidades: any) => {
       var cidades = cidades;
-      
+
       cidades = cidades[Object.keys(cidades)[0]];
       cidades = cidades[Object.keys(cidades)[0]];
 
@@ -47,6 +47,7 @@ export class BoxCidadeComponent {
         cidades[key]["periodo"] = key;
         return cidades[key];
       });
+
     });
   }
 }
