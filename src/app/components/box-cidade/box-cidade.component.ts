@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 import { ClimaService } from "./../../services/clima.service";
 import * as moment from "moment";
 
@@ -9,7 +9,7 @@ import * as moment from "moment";
   styleUrls: ["./box-cidade.component.scss"],
 })
 export class BoxCidadeComponent {
-  myControl = new FormControl();
+  myControl = new UntypedFormControl();
 
   cidades: Object;
   periodos: string[];

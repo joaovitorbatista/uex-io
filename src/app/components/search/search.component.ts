@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 import { CidadeService } from './../../services/cidade.service';
 import { Cidade } from './../../models/cidade';
 
@@ -12,7 +12,7 @@ import { Cidade } from './../../models/cidade';
 
 export class SearchComponent {
 
-   myControl = new FormControl();
+   myControl = new UntypedFormControl();
   // options: string[] = ['Curitiba', 'Campo Largo', 'Pinhais'];
 
   cidade = {} as Cidade;
